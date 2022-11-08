@@ -1,0 +1,15 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>LittleSnitch Rule Groups</title>
+</head>
+<body>
+<h2>LittleSnitch Rule Groups</h2>
+<p>This hosts the rule groups defined at <a href="https://littlesnitch.scrtybybscrty.org">littlesnitch.scrtybybscty.org</a>. They are designed for use with <a href="https://www.obdev.at/products/littlesnitch/index.html">LittleSnitch</a></p>
+<ul class="post-list">
+{{ range .Site.Pages.Children "groups/" }}
+<li><a href="{{ .Url }}">{{ .Name }}</a></li>
+{{ end }}
+</ul>
+</body>
+</html>

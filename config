@@ -1,0 +1,9 @@
+TEMPLATES = site.tmpl
+SOURCE = src
+OUTPUT = build
+TITLE = Little Snitch rule groups
+URL = https://littlesnitch.scrtybybscrty.org
+AUTHOR = Les Aker
+
+index.html: groups/*.lsrules
+    inner-template

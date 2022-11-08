@@ -1,0 +1,20 @@
+{
+  "description" : "",
+  "name" : "bartender",
+  "rules" : [
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Bartender 4.app\/Contents\/MacOS\/Bartender 4",
+      "protocol" : "tcp",
+      "remote-domains" : "macbartender.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Bartender 4.app\/Contents\/MacOS\/Bartender 4",
+      "protocol" : "udp",
+      "remote-domains" : "macbartender.com"
+    }
+  ]
+}
