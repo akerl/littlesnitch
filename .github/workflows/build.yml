@@ -12,7 +12,6 @@ jobs:
     - name: Install AWS CLI
       run: pip install --user awscli
     - name: Install gostatic
-      env:
       run: go install github.com/piranha/gostatic@latest
     - name: Build Blog
       run: gostatic config
