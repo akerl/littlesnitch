@@ -1,0 +1,45 @@
+name: Build
+on: [pull_request, push]
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        submodules: recursive
+    - name: Install AWS CLI
+      run: pip install --user awscli
+    - name: Install gostatic
+      env:
+      run: go install github.com/piranha/gostatic@latest
+    - name: Build Blog
+      run: gostatic config
+    - name: Release
+      if: github.ref == 'refs/heads/master'
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_DEFAULT_REGION: us-east-1
+      run: aws s3 sync --delete build/ s3://akerl-littlesnitch/
+    - name: Post to a Slack channel
+      if: ${{ failure() }}
+      uses: slackapi/slack-github-action@v1.23.0
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
+      with:
+        payload: |
+          {
+            "text": "*${{ github.repository }}*\nBuild failed: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}",
+            "blocks": [
+              {
+                "type": "section",
+                "text": {
+                  "type": "mrkdwn",
+                  "text": "*${{ github.repository }}*\nBuild failed: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+                }
+              }
+            ]
+          }
