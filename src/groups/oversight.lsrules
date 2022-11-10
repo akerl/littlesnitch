@@ -1,0 +1,13 @@
+{
+  "description" : "",
+  "name" : "oversight",
+  "rules" : [
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/OverSight.app\/Contents\/MacOS\/OverSight",
+      "protocol" : "tcp",
+      "remote-domains" : "objective-see.com"
+    }
+  ]
+}

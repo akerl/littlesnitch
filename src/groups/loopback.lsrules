@@ -1,0 +1,27 @@
+{
+  "description" : "",
+  "name" : "loopback",
+  "rules" : [
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Loopback.app\/Contents\/MacOS\/Loopback",
+      "protocol" : "tcp",
+      "remote-domains" : "d2oxtzozd38ts8.cloudfront.net"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Loopback.app\/Contents\/MacOS\/Loopback",
+      "protocol" : "tcp",
+      "remote-domains" : "rogueamoeba.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Loopback.app\/Contents\/MacOS\/Loopback",
+      "protocol" : "tcp",
+      "remote-domains" : "rogueamoeba.net"
+    }
+  ]
+}

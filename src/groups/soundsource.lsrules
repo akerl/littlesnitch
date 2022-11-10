@@ -1,0 +1,13 @@
+{
+  "description" : "",
+  "name" : "soundsource",
+  "rules" : [
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/SoundSource.app\/Contents\/MacOS\/SoundSource",
+      "protocol" : "tcp",
+      "remote-domains" : "rogueamoeba.net"
+    }
+  ]
+}

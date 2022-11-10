@@ -1,0 +1,13 @@
+{
+  "description" : "",
+  "name" : "flux",
+  "rules" : [
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Flux.app\/Contents\/MacOS\/Flux",
+      "protocol" : "tcp",
+      "remote-domains" : "justgetflux.com"
+    }
+  ]
+}

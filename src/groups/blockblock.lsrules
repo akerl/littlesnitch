@@ -1,0 +1,27 @@
+{
+  "description" : "",
+  "name" : "blockblock",
+  "rules" : [
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/BlockBlock Helper.app\/Contents\/MacOS\/BlockBlock Helper",
+      "protocol" : "tcp",
+      "remote-domains" : "objective-see.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/BlockBlock Helper.app\/Contents\/MacOS\/BlockBlock Helper",
+      "protocol" : "tcp",
+      "remote-domains" : "sentry.io"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/BlockBlock Helper.app\/Contents\/MacOS\/BlockBlock Helper",
+      "protocol" : "udp",
+      "remote-domains" : "sentry.io"
+    }
+  ]
+}

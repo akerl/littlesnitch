@@ -1,0 +1,48 @@
+{
+  "description" : "",
+  "name" : "slack",
+  "rules" : [
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Slack.app\/Contents\/MacOS\/Slack",
+      "protocol" : "tcp",
+      "remote-domains" : "slack-files2.s3-us-west-2.amazonaws.com"
+    },
+    {
+      "action" : "deny",
+      "ports" : "443",
+      "process" : "\/Applications\/Slack.app\/Contents\/MacOS\/Slack",
+      "protocol" : "tcp",
+      "remote-domains" : "chime.aws"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Slack.app\/Contents\/MacOS\/Slack",
+      "protocol" : "tcp",
+      "remote-domains" : "slack-edge.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Slack.app\/Contents\/MacOS\/Slack",
+      "protocol" : "tcp",
+      "remote-domains" : "slack-imgs.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Slack.app\/Contents\/MacOS\/Slack",
+      "protocol" : "tcp",
+      "remote-domains" : "slack.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Slack.app\/Contents\/MacOS\/Slack",
+      "protocol" : "tcp",
+      "remote-domains" : "slackb.com"
+    }
+  ]
+}

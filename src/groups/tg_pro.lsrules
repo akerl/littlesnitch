@@ -1,0 +1,27 @@
+{
+  "description" : "",
+  "name" : "tg_pro",
+  "rules" : [
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/TG Pro.app\/Contents\/MacOS\/TG Pro",
+      "protocol" : "tcp",
+      "remote-domains" : "appcenter.ms"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/TG Pro.app\/Contents\/MacOS\/TG Pro",
+      "protocol" : "tcp",
+      "remote-domains" : "paddleapi.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/TG Pro.app\/Contents\/MacOS\/TG Pro",
+      "protocol" : "tcp",
+      "remote-domains" : "tunabellysoftware.com"
+    }
+  ]
+}

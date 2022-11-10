@@ -1,0 +1,27 @@
+{
+  "description" : "",
+  "name" : "knockknock",
+  "rules" : [
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/KnockKnock.app\/Contents\/MacOS\/KnockKnock",
+      "protocol" : "tcp",
+      "remote-domains" : "objective-see.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/KnockKnock.app\/Contents\/MacOS\/KnockKnock",
+      "protocol" : "tcp",
+      "remote-domains" : "sentry.io"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/KnockKnock.app\/Contents\/MacOS\/KnockKnock",
+      "protocol" : "tcp",
+      "remote-domains" : "virustotal.com"
+    }
+  ]
+}

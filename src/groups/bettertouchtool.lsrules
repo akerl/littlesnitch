@@ -1,0 +1,13 @@
+{
+  "description" : "",
+  "name" : "bettertouchtool",
+  "rules" : [
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/BetterTouchTool.app\/Contents\/MacOS\/BetterTouchTool",
+      "protocol" : "tcp",
+      "remote-domains" : "folivora.ai"
+    }
+  ]
+}

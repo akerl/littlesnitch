@@ -1,0 +1,69 @@
+{
+  "description" : "",
+  "name" : "discord",
+  "rules" : [
+    {
+      "action" : "allow",
+      "ports" : "50000-50010",
+      "process" : "\/Applications\/Discord.app\/Contents\/MacOS\/Discord",
+      "protocol" : "udp",
+      "remote-addresses" : "35.212.*.*"
+    },
+    {
+      "action" : "allow",
+      "ports" : "50000-50010",
+      "process" : "\/Applications\/Discord.app\/Contents\/MacOS\/Discord",
+      "protocol" : "udp",
+      "remote-addresses" : "66.22.*.*"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Discord.app\/Contents\/MacOS\/Discord",
+      "protocol" : "tcp",
+      "remote-domains" : "discord.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Discord.app\/Contents\/MacOS\/Discord",
+      "protocol" : "tcp",
+      "remote-domains" : "discord.gg"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Discord.app\/Contents\/MacOS\/Discord",
+      "protocol" : "tcp",
+      "remote-domains" : "discord.media"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Discord.app\/Contents\/MacOS\/Discord",
+      "protocol" : "tcp",
+      "remote-domains" : "discordapp.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Discord.app\/Contents\/MacOS\/Discord",
+      "protocol" : "tcp",
+      "remote-domains" : "discordapp.net"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Discord.app\/Contents\/MacOS\/Discord",
+      "protocol" : "udp",
+      "remote-domains" : "discord.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Discord.app\/Contents\/MacOS\/Discord",
+      "protocol" : "udp",
+      "remote-domains" : "discordapp.com"
+    }
+  ]
+}
