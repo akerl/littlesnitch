@@ -3,7 +3,11 @@ SOURCE = src
 OUTPUT = build
 TITLE = Little Snitch rule groups
 URL = https://littlesnitch.scrtybybscrty.org
-AUTHOR = Les Aker
+REPO = https://github.com/akerl/littlesnitch
 
-index.html: groups/*.lsrules
+index.html: groups/*.lsrules assets/*
     inner-template
+
+404.html: assets/*
+    inner-template
+

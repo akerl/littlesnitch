@@ -1,10 +1,16 @@
-<html>
-<head>
-<meta charset="utf-8">
-<title>LittleSnitch Rule Groups</title>
-</head>
-<body>
-<h2>404 Not Found</h2>
-<p>This page doesn't exist. Maybe you want to head back to <a href="https://littlesnitch.scrtybybscrty.org">littlesnitch.scrtybybscty.org</a>
-</body>
+<!doctype html>
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ .Site.Other.Title }}</title>
+        <link rel=icon type=image/x-icon href="assets/favicon.ico">
+        <link rel=stylesheet href="assets/pico.css">
+    </head>
+    <body>
+        <main class="container">
+            <h1>404 - Not Found</h1>
+            <p>This page doesn't exist. Maybe you want to head back to <a href="{{ .Site.Other.Url }}">{{ .Site.Other.Url }}</a>
+        </main>
+    </body>
 </html>
