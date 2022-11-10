@@ -16,7 +16,10 @@ jobs:
       with:
         go-version: '>=1.19.0'
     - name: Install gostatic
-      run: go install github.com/piranha/gostatic@latest
+      run: |
+        git clone https://github.com/akerl/gostatic ~/gostatic
+        cd ~/gostatic
+        go install .
     - name: Build Blog
       run: gostatic config
     - name: Release
