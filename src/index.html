@@ -13,7 +13,7 @@
             <h1>LittleSnitch Rule Groups</h1>
             <p>This hosts the rule groups defined at <a href="{{ .Site.Other.Repo }}">{{ replace "https://" "" .Site.Other.Repo }}</a>. They are designed for use with <a href="https://www.obdev.at/products/littlesnitch/index.html">Little Snitch</a>.</p>
             <ul class="post-list">
-                {{- range .Site.Pages.Children "groups/" | alphabetize_pages }}
+                {{- range .Site.Pages.Children "groups/" | abcsort }}
                 {{- $id := cut "^" "\\." .Name }}
                     <li>
                         <a id="item-{{ $id }}" href="{{ .Url }}">{{ $id }}</a>
