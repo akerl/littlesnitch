@@ -1,7 +1,7 @@
 littlesnitch
 ===========
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/akerl/littlesnitch/Build)](https://github.com/akerl/littlesnitch/actions)
+[![GitHub Workflow Status](https://img.shields.io/actions/github/workflow/status/akerl/littlesnitch/build.yml?branch=main)](https://github.com/akerl/littlesnitch/actions)
 
 These are the rule groups I've build for my [LittleSnitch](https://www.obdev.at/products/littlesnitch/index.html) configuration.
 
