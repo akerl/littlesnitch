@@ -1,7 +1,10 @@
+---
 name: Build
-on:
-  pull_request:
+'on':
   push:
+    branches:
+    - main
+  pull_request_target:
 jobs:
   build:
     name: Build
@@ -16,7 +19,7 @@ jobs:
     - name: Set up go
       uses: actions/setup-go@v3
       with:
-        go-version: '>=1.19.0'
+        go-version: ">=1.19.0"
     - name: Install gostatic
       run: go install github.com/piranha/gostatic@latest
     - name: Build Blog
@@ -24,13 +27,13 @@ jobs:
     - name: Release
       if: github.ref == 'refs/heads/main'
       env:
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_ACCESS_KEY_ID: "${{ secrets.AWS_ACCESS_KEY_ID }}"
+        AWS_SECRET_ACCESS_KEY: "${{ secrets.AWS_SECRET_ACCESS_KEY }}"
         AWS_DEFAULT_REGION: us-east-1
       run: aws s3 sync --delete build/ s3://akerl-littlesnitch/
     - name: Post to hook-exporter
-      run: ./.github/exporter.sh
+      run: "./.github/exporter.sh"
       env:
-        EXPORTER_TOKEN: ${{ secrets.EXPORTER_TOKEN }}
-        JOB_STATUS: ${{ job.status }}
-      if: ${{ always() }}
+        EXPORTER_TOKEN: "${{ secrets.EXPORTER_TOKEN }}"
+        JOB_STATUS: "${{ job.status }}"
+      if: "${{ always() }}"
