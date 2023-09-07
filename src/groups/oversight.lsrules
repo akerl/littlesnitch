@@ -7,6 +7,20 @@
       "ports" : "443",
       "process" : "\/Applications\/OverSight.app\/Contents\/MacOS\/OverSight",
       "protocol" : "tcp",
+      "remote-hosts" : "objective-see.org"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/OverSight.app\/Contents\/MacOS\/OverSight",
+      "protocol" : "tcp",
+      "remote-domains" : "o130950.ingest.sentry.io"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/OverSight.app\/Contents\/MacOS\/OverSight",
+      "protocol" : "tcp",
       "remote-domains" : "objective-see.com"
     }
   ]

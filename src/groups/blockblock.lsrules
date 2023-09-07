@@ -7,6 +7,13 @@
       "ports" : "443",
       "process" : "\/Applications\/BlockBlock Helper.app\/Contents\/MacOS\/BlockBlock Helper",
       "protocol" : "tcp",
+      "remote-hosts" : "objective-see.org"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/BlockBlock Helper.app\/Contents\/MacOS\/BlockBlock Helper",
+      "protocol" : "tcp",
       "remote-domains" : "objective-see.com"
     },
     {

@@ -1,0 +1,34 @@
+{
+  "description" : "",
+  "name" : "reikey",
+  "rules" : [
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/ReiKey.app\/Contents\/MacOS\/ReiKey",
+      "protocol" : "tcp",
+      "remote-hosts" : "objective-see.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/ReiKey.app\/Contents\/MacOS\/ReiKey",
+      "protocol" : "tcp",
+      "remote-hosts" : "objective-see.org"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/ReiKey.app\/Contents\/Library\/LoginItems\/ReiKey Helper.app\/Contents\/MacOS\/ReiKey Helper",
+      "protocol" : "tcp",
+      "remote-hosts" : "objective-see.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/ReiKey.app\/Contents\/Library\/LoginItems\/ReiKey Helper.app\/Contents\/MacOS\/ReiKey Helper",
+      "protocol" : "tcp",
+      "remote-hosts" : "objective-see.org"
+    }
+  ]
+}

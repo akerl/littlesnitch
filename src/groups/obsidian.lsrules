@@ -1,0 +1,41 @@
+{
+  "description" : "",
+  "name" : "obsidian",
+  "rules" : [
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Obsidian.app\/Contents\/MacOS\/Obsidian",
+      "protocol" : "tcp",
+      "remote-hosts" : "raw.githubusercontent.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Obsidian.app\/Contents\/MacOS\/Obsidian",
+      "protocol" : "tcp",
+      "remote-hosts" : "api.obsidian.md"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Obsidian.app\/Contents\/MacOS\/Obsidian",
+      "protocol" : "tcp",
+      "remote-hosts" : "releases.obsidian.md"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Obsidian.app\/Contents\/MacOS\/Obsidian",
+      "protocol" : "udp",
+      "remote-hosts" : "api.obsidian.md"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Obsidian.app\/Contents\/MacOS\/Obsidian",
+      "protocol" : "udp",
+      "remote-hosts" : "releases.obsidian.md"
+    }
+  ]
+}
