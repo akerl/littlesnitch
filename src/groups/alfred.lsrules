@@ -7,46 +7,6 @@
       "ports" : "443",
       "process" : "\/Applications\/Alfred 5.app\/Contents\/MacOS\/Alfred",
       "protocol" : "tcp",
-      "remote-domains" : "githubusercontent.com",
-      "via" : "\/opt\/brew\/Cellar\/php\/8.1.12\/bin\/php"
-    },
-    {
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "\/Applications\/Alfred 5.app\/Contents\/MacOS\/Alfred",
-      "protocol" : "tcp",
-      "remote-domains" : "scdn.co",
-      "via" : "\/opt\/brew\/Cellar\/php\/8.1.12\/bin\/php"
-    },
-    {
-      "action" : "allow",
-      "ports" : "80",
-      "process" : "\/Applications\/Alfred 5.app\/Contents\/MacOS\/Alfred",
-      "protocol" : "tcp",
-      "remote-domains" : "spotify.com",
-      "via" : "\/opt\/brew\/Cellar\/php\/8.1.12\/bin\/php"
-    },
-    {
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "\/Applications\/Alfred 5.app\/Contents\/MacOS\/Alfred",
-      "protocol" : "tcp",
-      "remote-domains" : "spotify.com",
-      "via" : "\/opt\/brew\/Cellar\/php\/8.1.12\/bin\/php"
-    },
-    {
-      "action" : "allow",
-      "ports" : "80",
-      "process" : "\/Applications\/Alfred 5.app\/Contents\/MacOS\/Alfred",
-      "protocol" : "tcp",
-      "remote-domains" : "stathat.com",
-      "via" : "\/opt\/brew\/Cellar\/php\/8.1.12\/bin\/php"
-    },
-    {
-      "action" : "allow",
-      "ports" : "443",
-      "process" : "\/Applications\/Alfred 5.app\/Contents\/MacOS\/Alfred",
-      "protocol" : "tcp",
       "remote-domains" : "alfredapp.com"
     },
     {
