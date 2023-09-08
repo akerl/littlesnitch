@@ -7,6 +7,34 @@
       "ports" : "443",
       "process" : "\/Applications\/Slack.app\/Contents\/MacOS\/Slack",
       "protocol" : "tcp",
+      "remote-addresses" : "18.160.10.61"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Slack.app\/Contents\/MacOS\/Slack",
+      "protocol" : "tcp",
+      "remote-hosts" : "dns.google"
+    },
+    {
+      "action" : "allow",
+      "ports" : "53",
+      "process" : "\/Applications\/Slack.app\/Contents\/MacOS\/Slack",
+      "protocol" : "udp",
+      "remote-hosts" : "dns.google"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Slack.app\/Contents\/MacOS\/Slack",
+      "protocol" : "udp",
+      "remote-hosts" : "dns.google"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Slack.app\/Contents\/MacOS\/Slack",
+      "protocol" : "tcp",
       "remote-domains" : "slack-files2.s3-us-west-2.amazonaws.com"
     },
     {

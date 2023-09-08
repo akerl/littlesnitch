@@ -1,0 +1,69 @@
+{
+  "description" : "",
+  "name" : "irccloud",
+  "rules" : [
+    {
+      "action" : "deny",
+      "ports" : "443",
+      "process" : "\/Applications\/IRCCloud.app\/Contents\/MacOS\/IRCCloud",
+      "protocol" : "tcp",
+      "remote-hosts" : "platform.twitter.com"
+    },
+    {
+      "action" : "deny",
+      "ports" : "443",
+      "process" : "\/Applications\/IRCCloud.app\/Contents\/MacOS\/IRCCloud",
+      "protocol" : "tcp",
+      "remote-hosts" : "syndication.twitter.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/IRCCloud.app\/Contents\/MacOS\/IRCCloud",
+      "protocol" : "tcp",
+      "remote-hosts" : "github.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/IRCCloud.app\/Contents\/MacOS\/IRCCloud",
+      "protocol" : "tcp",
+      "remote-hosts" : "objects.githubusercontent.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/IRCCloud.app\/Contents\/MacOS\/IRCCloud",
+      "protocol" : "tcp",
+      "remote-hosts" : "fonts.googleapis.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/IRCCloud.app\/Contents\/MacOS\/IRCCloud",
+      "protocol" : "tcp",
+      "remote-hosts" : "usercontent.irccloud-cdn.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/IRCCloud.app\/Contents\/MacOS\/IRCCloud",
+      "protocol" : "tcp",
+      "remote-hosts" : "api-2.irccloud.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/IRCCloud.app\/Contents\/MacOS\/IRCCloud",
+      "protocol" : "tcp",
+      "remote-hosts" : "www.irccloud.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/IRCCloud.app\/Contents\/MacOS\/IRCCloud",
+      "protocol" : "tcp",
+      "remote-hosts" : "rebound.postmarkapp.com"
+    }
+  ]
+}

@@ -10,6 +10,34 @@
       "remote-addresses" : "239.255.255.250"
     },
     {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "tcp",
+      "remote-hosts" : "dns.google"
+    },
+    {
+      "action" : "allow",
+      "ports" : "53",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "udp",
+      "remote-hosts" : "dns.google"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "udp",
+      "remote-hosts" : "dns.google"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",
+      "protocol" : "udp",
+      "remote-hosts" : "o22381.ingest.sentry.io"
+    },
+    {
       "action" : "deny",
       "ports" : "443",
       "process" : "\/Applications\/Spotify.app\/Contents\/MacOS\/Spotify",

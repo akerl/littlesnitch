@@ -1,0 +1,13 @@
+{
+  "description" : "",
+  "name" : "drive",
+  "rules" : [
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Google Drive.app\/Contents\/MacOS\/Google Drive",
+      "protocol" : "tcp",
+      "remote-domains" : "googleapis.com"
+    }
+  ]
+}

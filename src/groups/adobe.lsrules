@@ -1,0 +1,69 @@
+{
+  "description" : "",
+  "name" : "adobe",
+  "rules" : [
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Library\/Application Support\/Adobe\/Adobe Desktop Common\/ADS\/Adobe Desktop Service.app\/Contents\/MacOS\/Adobe Desktop Service",
+      "protocol" : "tcp",
+      "remote-domains" : "adobe.io"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Library\/Application Support\/Adobe\/AdobeGCClient\/AGSService",
+      "protocol" : "tcp",
+      "remote-hosts" : "genuine.adobe.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Utilities\/Adobe Sync\/CoreSync\/Core Sync.app\/Contents\/MacOS\/Core Sync",
+      "protocol" : "tcp",
+      "remote-hosts" : "scss.adobesc.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Utilities\/Adobe Sync\/CoreSync\/Core Sync.app\/Contents\/MacOS\/Core Sync",
+      "protocol" : "tcp",
+      "remote-domains" : "adobe.io"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Utilities\/Adobe Sync\/CoreSync\/Core Sync.app\/Contents\/MacOS\/Core Sync",
+      "protocol" : "tcp",
+      "remote-domains" : "adobess.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Utilities\/Adobe Sync\/CoreSync\/Core Sync.app\/Contents\/MacOS\/Core Sync",
+      "protocol" : "tcp",
+      "remote-domains" : "typekit.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Utilities\/Adobe Creative Cloud Experience\/CCXProcess\/CCXProcess.app\/Contents\/libs\/Creative Cloud Content Manager.node",
+      "protocol" : "tcp",
+      "remote-hosts" : "odin.adobe.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Utilities\/Adobe Creative Cloud Experience\/CCXProcess\/CCXProcess.app\/Contents\/libs\/Creative Cloud Content Manager.node",
+      "protocol" : "tcp",
+      "remote-hosts" : "cc-api-data.adobe.io"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Utilities\/Adobe Creative Cloud Experience\/CCXProcess\/CCXProcess.app\/Contents\/libs\/Creative Cloud Content Manager.node",
+      "protocol" : "tcp",
+      "remote-hosts" : "p13n.adobe.io"
+    }
+  ]
+}

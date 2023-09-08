@@ -7,6 +7,69 @@
       "ports" : "443",
       "process" : "\/Applications\/Discord.app\/Contents\/MacOS\/Discord",
       "protocol" : "tcp",
+      "remote-addresses" : "104.18.48.115"
+    },
+    {
+      "action" : "allow",
+      "ports" : "50002",
+      "process" : "\/Applications\/Discord.app\/Contents\/MacOS\/Discord",
+      "protocol" : "udp",
+      "remote-addresses" : "34.0.140.61"
+    },
+    {
+      "action" : "allow",
+      "ports" : "50003",
+      "process" : "\/Applications\/Discord.app\/Contents\/MacOS\/Discord",
+      "protocol" : "udp",
+      "remote-addresses" : "35.212.120.122"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Discord.app\/Contents\/MacOS\/Discord",
+      "protocol" : "tcp",
+      "remote-addresses" : "162.159.*.*"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Discord.app\/Contents\/MacOS\/Discord",
+      "protocol" : "udp",
+      "remote-addresses" : "162.159.*.*"
+    },
+    {
+      "action" : "allow",
+      "ports" : "50001-50004",
+      "process" : "\/Applications\/Discord.app\/Contents\/MacOS\/Discord",
+      "protocol" : "udp",
+      "remote-addresses" : "66.22.*.*"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Discord.app\/Contents\/MacOS\/Discord",
+      "protocol" : "tcp",
+      "remote-hosts" : "dns.google"
+    },
+    {
+      "action" : "allow",
+      "ports" : "53",
+      "process" : "\/Applications\/Discord.app\/Contents\/MacOS\/Discord",
+      "protocol" : "udp",
+      "remote-hosts" : "dns.google"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Discord.app\/Contents\/MacOS\/Discord",
+      "protocol" : "udp",
+      "remote-hosts" : "dns.google"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Discord.app\/Contents\/MacOS\/Discord",
+      "protocol" : "tcp",
       "remote-domains" : "discord.com"
     },
     {

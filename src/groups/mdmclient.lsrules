@@ -1,0 +1,25 @@
+{
+  "description" : "",
+  "name" : "mdmclient",
+  "rules" : [
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/usr\/libexec\/mdmclient",
+      "protocol" : "tcp",
+      "remote-hosts" : "a.simplemdm.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/usr\/libexec\/mdmclient",
+      "protocol" : "udp",
+      "remote-hosts" : "a.simplemdm.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/usr\/libexec\/mdmclient",
+      "remote-hosts" : "a.simplemdm.com"
+    }
+  ]
+}

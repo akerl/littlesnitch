@@ -1,0 +1,69 @@
+{
+  "description" : "",
+  "name" : "chrome",
+  "rules" : [
+    {
+      "action" : "allow",
+      "ports" : "5228",
+      "process" : "\/Applications\/Google Chrome.app\/Contents\/MacOS\/Google Chrome",
+      "protocol" : "tcp",
+      "remote-addresses" : "142.251.16.188"
+    },
+    {
+      "action" : "allow",
+      "ports" : "5228",
+      "process" : "\/Applications\/Google Chrome.app\/Contents\/MacOS\/Google Chrome",
+      "protocol" : "tcp",
+      "remote-addresses" : "172.253.115.188"
+    },
+    {
+      "action" : "allow",
+      "ports" : "1900",
+      "process" : "\/Applications\/Google Chrome.app\/Contents\/MacOS\/Google Chrome",
+      "protocol" : "udp",
+      "remote-addresses" : "239.255.255.250"
+    },
+    {
+      "action" : "allow",
+      "ports" : "5228",
+      "process" : "\/Applications\/Google Chrome.app\/Contents\/MacOS\/Google Chrome",
+      "protocol" : "tcp",
+      "remote-hosts" : "mtalk.google.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "53",
+      "process" : "\/Applications\/Google Chrome.app\/Contents\/MacOS\/Google Chrome",
+      "protocol" : "udp",
+      "remote-hosts" : "dns.google"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Google Chrome.app\/Contents\/MacOS\/Google Chrome",
+      "protocol" : "tcp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Applications\/Google Chrome.app\/Contents\/MacOS\/Google Chrome",
+      "protocol" : "udp",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Library\/Google\/GoogleSoftwareUpdate\/GoogleSoftwareUpdate.bundle\/Contents\/Helpers\/GoogleSoftwareUpdateAgent.app\/Contents\/MacOS\/GoogleSoftwareUpdateAgent",
+      "protocol" : "tcp",
+      "remote-hosts" : "tools.google.com"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "\/Library\/Google\/GoogleSoftwareUpdate\/GoogleSoftwareUpdate.bundle\/Contents\/Helpers\/ksfetch",
+      "protocol" : "tcp",
+      "remote-hosts" : "tools.google.com"
+    }
+  ]
+}

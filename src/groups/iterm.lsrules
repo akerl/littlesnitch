@@ -1,0 +1,37 @@
+{
+  "description" : "",
+  "name" : "iterm",
+  "rules" : [
+    {
+      "action" : "allow",
+      "ports" : "22",
+      "process" : "\/Applications\/iTerm.app\/Contents\/MacOS\/iTerm2",
+      "protocol" : "tcp",
+      "remote-hosts" : "github.com",
+      "via" : "\/opt\/brew\/Cellar\/openssh\/9.3p1_2\/bin\/ssh"
+    },
+    {
+      "action" : "allow",
+      "ports" : "53",
+      "process" : "\/Applications\/iTerm.app\/Contents\/MacOS\/iTerm2",
+      "protocol" : "udp",
+      "remote-hosts" : "dns.google",
+      "via" : "\/usr\/bin\/dig"
+    },
+    {
+      "action" : "allow",
+      "ports" : "43",
+      "process" : "\/Applications\/iTerm.app\/Contents\/MacOS\/iTerm2",
+      "protocol" : "tcp",
+      "remote" : "any",
+      "via" : "\/usr\/bin\/whois"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/iTerm.app\/Contents\/MacOS\/iTerm2",
+      "protocol" : "icmp",
+      "remote" : "any",
+      "via" : "\/sbin\/ping"
+    }
+  ]
+}
